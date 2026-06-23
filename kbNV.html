@@ -22,19 +22,41 @@
 <body class="text-stone-800">
 
     <!-- НАВИГАЦИЯ (МЕНЮ) -->
-    <nav class="bg-white/80 backdrop-blur-md sticky top-0 z-50 border-b border-stone-200 py-4 px-6">
-        <div class="max-w-5xl mx-auto flex justify-between items-center">
-            <!-- Тук по-късно ще стои вашето професионално лого -->
-            <div class="text-xl font-bold tracking-wide text-stone-900">НВ | Психотерапия</div>
-            <div class="space-x-6 text-sm font-medium text-stone-600">
-                <a href="#" class="hover:text-stone-900 transition">Начало</a>
-                <a href="#" class="hover:text-stone-900 transition">За мен</a>
-                <a href="#" class="hover:text-stone-900 transition">Услуги</a>
-                <a href="#kontakti" class="hover:text-stone-900 transition">Контакти</a>
+    <!-- ГЛАВНО МЕНЮ (НАВИГАЦИЯ) С ЛОГО -->
+    <!-- ГЛАВНО МЕНЮ С ЧИСТО БЯЛ ФОН И ЧЕРЕН ТЕКСТ -->
+    <nav class="fixed top-0 left-0 w-full z-50 bg-white border-b border-stone-200 shadow-sm">
+        <div class="max-w-7xl mx-auto px-6 py-3 flex items-center justify-between">
+
+            <!-- Секция за Логото (Ляво) -->
+            <a href="#" class="flex items-center gap-3 group">
+                <img src="logomindlogictransperant.png" alt="Н.В. Клиничен Психолог Пловдив"
+                    class="h-10 w-auto rounded-md transition-transform group-hover:scale-105">
+
+                <!-- Текстът до логото вече е чисто черен -->
+                <div class="leading-tight text-black">
+                    <span class="block text-sm font-bold tracking-tight">Н. В.</span>
+                    <span class="block text-xs font-medium text-stone-700">Клиничен Психолог & Терапевт</span>
+                </div>
+            </a>
+
+            <!-- Секция за Линковете (Дясно) -->
+            <!-- Използваме text-black за плътен черен цвят на шрифта -->
+            <div class="hidden md:flex items-center gap-8 text-sm font-bold text-black">
+                <a href="#" class="hover:text-stone-600 transition">Начало</a>
+                <a href="#psihodiagnostika" class="hover:text-stone-600 transition">Услуги</a>
+                <a href="#za-men" class="hover:text-stone-600 transition">За мен</a>
+                <!-- Бутонът за Контакти остава черен с бял текст за акцент -->
+                <a href="#kontakti"
+                    class="bg-black text-white px-4 py-2 rounded-full hover:bg-stone-850 transition">Контакти</a>
             </div>
+
+            <!-- Бутон за Мобилно меню -->
+            <div class="md:hidden text-black text-2xl">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+
         </div>
     </nav>
-
     <!-- ЗАГЛАВНА СЕКЦИЯ (HERO) -->
     <!-- ИНТЕРАКТИВЕН ГОРЕН БАНЕР -->
     <section class="max-w-5xl mx-auto px-6 py-8">
