@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="bg">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Навлез в ИТ с AI: Наръчник за абсолютно начинаещи</title>
+    <!-- Tailwind CSS for modern, clean design -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+    </style>
+</head>
+
+<body class="bg-slate-50 text-slate-800 antialiased">
+
+    <!-- Header / Hero Section -->
+    <header
+        class="bg-gradient-to-r from-indigo-900 via-slate-900 to-blue-950 text-white py-16 px-6 relative overflow-hidden">
+        <div
+            class="absolute inset-0 bg-[radial-gradient(circle_at_30%_30%,rgba(99,102,241,0.15),transparent)] pointer-events-none">
+        </div>
+        <div class="max-w-4xl mx-auto text-center relative z-10">
+            <span
+                class="bg-indigo-500/20 text-indigo-300 border border-indigo-500/30 text-xs uppercase tracking-widest font-bold px-3 py-1 rounded-full">Старт
+                от Нулата (2026)</span>
+            <h1 class="text-4xl md:text-5xl font-extrabold mt-4 mb-6 leading-tight">Моят първи уебсайт с VS Code</h1>
+            <p class="text-lg md:text-xl text-slate-300 max-w-2xl mx-auto font-light leading-relaxed">
+                Наръчник за хора без опит в програмирането и дизайна, които искат да разберат модерните технологии
+                бързо.
+            </p>
+        </div>
+    </header>
+
+    <!-- Navigation / Quick Jumps -->
+    <main class="max-w-5xl mx-auto px-6 py-12">
+
+        <!-- 1. Великата промяна (Метафора) -->
+        <section class="bg-white rounded-2xl p-8 md:p-10 shadow-sm border border-slate-100 mb-10">
+            <div class="flex items-start gap-5">
+                <div class="bg-indigo-50 text-indigo-600 p-4 rounded-xl text-2xl hidden sm:block">
+                    <i class="fa-solid fa-wand-magic-sparkles"></i>
+                </div>
+                <div>
+                    <h2 class="text-2xl font-bold text-slate-900 mb-4">1. Новата реалност: Какво се промени в ИТ?</h2>
+                    <p class="text-slate-600 mb-6 leading-relaxed">
+                        Преди ИТ сферата изискваше да научиш чужд език (код) и да го пишеш буква по буква. Днес процесът
+                        прилича повече на това да бъдеш <strong>главен готвач</strong> в ресторант.
+                    </p>
+
+                    <!-- Comparison Grid -->
+                    <div class="grid md:grid-cols-2 gap-6 mt-6">
+                        <div class="bg-slate-50 p-6 rounded-xl border border-slate-150">
+                            <h3 class="font-bold text-indigo-950 flex items-center gap-2 mb-3">
+                                <span
+                                    class="bg-indigo-100 text-indigo-800 text-xs w-6 h-6 rounded-full flex items-center justify-center font-bold">A</span>
+                                Преди (Старият начин)
+                            </h3>
+                            <ul class="space-y-2 text-sm text-slate-600">
+                                <li><i class="fa-solid fa-xmark text-rose-500 mr-2"></i> Месеци учене на запетаи, скоби
+                                    и синтаксис.</li>
+                                <li><i class="fa-solid fa-xmark text-rose-500 mr-2"></i> Поправяне на досадни софтуерни
+                                    грешки с часове.</li>
+                                <li><i class="fa-solid fa-xmark text-rose-500 mr-2"></i> Висока бариера за навлизане.
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="bg-emerald-50/50 p-6 rounded-xl border border-emerald-100">
+                            <h3 class="font-bold text-emerald-950 flex items-center gap-2 mb-3">
+                                <span
+                                    class="bg-emerald-100 text-emerald-800 text-xs w-6 h-6 rounded-full flex items-center justify-center font-bold">B</span>
+                                Сега (Начинът с AI)
+                            </h3>
+                            <ul class="space-y-2 text-sm text-slate-600">
+                                <li><i class="fa-solid fa-check text-emerald-600 mr-2"></i> Описваш какво искаш на
+                                    обикновен език (Промпт).</li>
+                                <li><i class="fa-solid fa-check text-emerald-600 mr-2"></i> AI пише кода за секунди; ти
+                                    само го тестваш.</li>
+                                <li><i class="fa-solid fa-check text-emerald-600 mr-2"></i> Твоята роля е да мислиш
+                                    логично и креативно.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 2. Категории инструменти -->
+        <section class="mb-10">
+            <h2 class="text-2xl font-bold text-slate-900 mb-6 text-center sm:text-left">2. Трите основни стълба на AI
+                инструментите в ИТ</h2>
+
+            <div class="grid md:grid-cols-3 gap-6">
+
+                <!-- Card 1: Генериране на сайтове -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 flex flex-col justify-between">
+                    <div>
+                        <div class="text-3xl text-indigo-600 mb-4"><i class="fa-solid fa-compass-drafting"></i></div>
+                        <h3 class="font-bold text-lg text-slate-900 mb-2">Генериране на дизайн (No-Code)</h3>
+                        <p class="text-sm text-slate-500 mb-4 leading-relaxed">
+                            Инструменти за бързо изграждане на уебсайтове директно през браузъра чрез визуални редактори
+                            и AI.
+                        </p>
+                        <span
+                            class="inline-block bg-indigo-50 text-indigo-700 text-xs font-semibold px-2.5 py-1 rounded mb-4">За
+                            бизнес сайтове</span>
+                    </div>
+                    <div class="border-t pt-4 mt-4">
+                        <span class="text-xs font-bold text-slate-400 block mb-2">ТОП ИНСТРУМЕНТИ:</span>
+                        <div class="font-semibold text-slate-700 text-sm">Framer AI, Wix Studio, Hostinger AI</div>
+                    </div>
+                </div>
+
+                <!-- Card 2: AI Асистенти за кодене -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 flex flex-col justify-between">
+                    <div>
+                        <div class="text-3xl text-indigo-600 mb-4"><i class="fa-solid fa-code"></i></div>
+                        <h3 class="font-bold text-lg text-slate-900 mb-2">AI за Кодиране (Low-Code)</h3>
+                        <p class="text-sm text-slate-500 mb-4 leading-relaxed">
+                            Програми, които ви помагат да пишете и разбирате код, дори никога преди да не сте го
+                            правили.
+                        </p>
+                        <span
+                            class="inline-block bg-blue-50 text-blue-700 text-xs font-semibold px-2.5 py-1 rounded mb-4">За
+                            учене и разработка</span>
+                    </div>
+                    <div class="border-t pt-4 mt-4">
+                        <span class="text-xs font-bold text-slate-400 block mb-2">ТОП ИНСТРУМЕНТИ:</span>
+                        <div class="font-semibold text-slate-700 text-sm">Cursor AI, v0.dev, GitHub Copilot</div>
+                    </div>
+                </div>
+
+                <!-- Card 3: Автоматизация -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 flex flex-col justify-between">
+                    <div>
+                        <div class="text-3xl text-indigo-600 mb-4"><i class="fa-solid fa-gears"></i></div>
+                        <h3 class="font-bold text-lg text-slate-900 mb-2">AI за Автоматизация</h3>
+                        <p class="text-sm text-slate-500 mb-4 leading-relaxed">
+                            Свързване на различни програми да работят сами (напр. автоматично изпращане на имейли при
+                            нов клиент).
+                        </p>
+                        <span
+                            class="inline-block bg-emerald-50 text-emerald-700 text-xs font-semibold px-2.5 py-1 rounded mb-4">За
+                            спестяване на време</span>
+                    </div>
+                    <div class="border-t pt-4 mt-4">
+                        <span class="text-xs font-bold text-slate-400 block mb-2">ТОП ИНСТРУМЕНТИ:</span>
+                        <div class="font-semibold text-slate-700 text-sm">Make.com, Zapier AI, Claude 3.5</div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- 3. Пътна карта за бърз старт -->
+        <section class="bg-white rounded-2xl p-8 md:p-10 shadow-sm border border-slate-100 mb-10">
+            <h2 class="text-2xl font-bold text-slate-900 mb-6">3. Твоята бърза пътна карта към ИТ сектора</h2>
+            <p class="text-slate-600 mb-8 leading-relaxed">
+                Ето стъпките, по които да минеш, за да навлезеш бързо в материята и да започнеш да създаваш реални
+                софтуерни продукти без предишен опит.
+            </p>
+
+            <div
+                class="space-y-8 relative before:absolute before:inset-0 before:left-4 sm:before:left-6 before:w-0.5 before:bg-indigo-100 before:pointer-events-none">
+
+                <!-- Step 1 -->
+                <div class="flex items-start gap-4 sm:gap-6 relative">
+                    <div
+                        class="w-8 h-8 sm:w-12 sm:h-12 rounded-full bg-indigo-600 text-white flex items-center justify-center font-bold text-sm sm:text-base shrink-0 z-10 shadow-md">
+                        1</div>
+                    <div>
+                        <h4 class="font-bold text-lg text-slate-900">Научи се да "разговаряш" с AI (Prompt Engineering)
+                        </h4>
+                        <p class="text-slate-500 text-sm mt-1 leading-relaxed">
+                            Първото умение е да задаваш правилни въпроси. Вместо "Направи ми сайт", научи се да казваш:
+                            "Аз съм начинаещ. Напиши ми прост HTML код за уебсайт на психологичен кабинет. Обясни ми
+                            всеки ред какво прави, сякаш съм на 10 години." Опитай това в <strong>ChatGPT</strong> или
+                            <strong>Claude</strong>.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="flex items-start gap-4 sm:gap-6 relative">
+                    <div
+                        class="w-8 h-8 sm:w-12 sm:h-12 rounded-full bg-indigo-600 text-white flex items-center justify-center font-bold text-sm sm:text-base shrink-0 z-10 shadow-md">
+                        2</div>
+                    <div>
+                        <h4 class="font-bold text-lg text-slate-900">Създай първия си визуален проект с Framer</h4>
+                        <p class="text-slate-500 text-sm mt-1 leading-relaxed">
+                            Отвори безплатен акаунт във <a href="https://framer.com" target="_blank"
+                                class="text-indigo-600 hover:underline font-semibold">Framer</a>. Натисни бутона "Start
+                            with AI". Напиши на български или английски описание на сайта на твоя кабинет. Наблюдавай
+                            как AI подрежда страниците и елементите. Това ще ти даде увереност и усещане за дизайн.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="flex items-start gap-4 sm:gap-6 relative">
+                    <div
+                        class="w-8 h-8 sm:w-12 sm:h-12 rounded-full bg-indigo-600 text-white flex items-center justify-center font-bold text-sm sm:text-base shrink-0 z-10 shadow-md">
+                        3</div>
+                    <div>
+                        <h4 class="font-bold text-lg text-slate-900">Направи плавна стъпка към истинския код с Cursor AI
+                        </h4>
+                        <p class="text-slate-500 text-sm mt-1 leading-relaxed">
+                            Когато си готов да видиш какво има "под капака" на един сайт, свали редактора на код <a
+                                href="https://www.cursor.com" target="_blank"
+                                class="text-indigo-600 hover:underline font-semibold">Cursor</a>. С него можеш просто да
+                            маркираш част от кода и да натиснеш бутон, за да кажеш на AI: "Промени цвета на този бутон
+                            на зелен" или "Обясни ми защо тази форма за контакти не работи".
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Step 4 -->
+                <div class="flex items-start gap-4 sm:gap-6 relative">
+                    <div
+                        class="w-8 h-8 sm:w-12 sm:h-12 rounded-full bg-indigo-600 text-white flex items-center justify-center font-bold text-sm sm:text-base shrink-0 z-10 shadow-md">
+                        4</div>
+                    <div>
+                        <h4 class="font-bold text-lg text-slate-900">Изгради портфолио и го покажи на света</h4>
+                        <p class="text-slate-500 text-sm mt-1 leading-relaxed">
+                            Най-бързият начин да влезеш в ИТ и да си намериш работа (или свободна практика) е да имаш
+                            завършени проекти. Направи 2 или 3 реални уебсайта (например за приятел, за твоя собствен
+                            психологичен кабинет или фиктивен проект) и ги качи онлайн безплатно с платформи като
+                            <strong>Vercel</strong> или директно през Framer.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- 4. Важни понятия, обяснени просто -->
+        <section class="bg-indigo-900 text-white rounded-2xl p-8 md:p-10 shadow-sm mb-10 relative overflow-hidden">
+            <div
+                class="absolute inset-0 bg-[radial-gradient(circle_at_80%_85%,rgba(99,102,241,0.25),transparent)] pointer-events-none">
+            </div>
+            <h2 class="text-2xl font-bold mb-6 relative z-10">4. ИТ Речник за Начинаещи (С прости думи)</h2>
+
+            <div class="space-y-6 relative z-10">
+                <div class="border-b border-indigo-800/60 pb-4">
+                    <strong class="text-indigo-300 block mb-1 text-lg">No-Code (Без код):</strong>
+                    <p class="text-sm text-slate-300">Начин за създаване на софтуер без писане на програмен код. Вместо
+                        това използвате готови визуални блокове (като сглобяване на Лего).</p>
+                </div>
+                <div class="border-b border-indigo-800/60 pb-4">
+                    <strong class="text-indigo-300 block mb-1 text-lg">Front-end (Фронт-енд):</strong>
+                    <p class="text-sm text-slate-300">Всичко, което потребителят вижда на екрана си — цветове, бутони,
+                        текстове, менюта.</p>
+                </div>
+                <div>
+                    <strong class="text-indigo-300 block mb-1 text-lg">Back-end (Бек-енд):</strong>
+                    <p class="text-sm text-slate-300">"Мозъкът" на уебсайта, който се намира зад кулисите. Бази данни,
+                        потребителски профили, обработка на плащания и сигурност.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Call to Action -->
+        <div class="text-center py-6">
+            <p class="text-slate-500 mb-2">Искаш ли да направим първия ти практически опит заедно?</p>
+            <h3 class="text-xl font-bold text-slate-800">Кажи ми: Искаш ли да напишем първия ти промпт за уебсайт сега?
+            </h3>
+        </div>
+
+    </main>
+
+    <footer class="bg-slate-900 text-slate-400 py-8 text-center text-xs mt-12 border-t border-slate-800">
+        <p>© 2026 Твоят Път към ИТ с AI. Всички права запазени.</p>
+    </footer>
+
+</body>
+
+</html>
+```eof
+
+### Какво да направим сега?
+
+За да усетите силата на тези технологии веднага и без никакво напрежение:
+1. Представете си, че аз съм вашият личен AI асистент (като Claude или ChatGPT).
+2. Напишете ми просто с ваши думи: **"Искам да видя как изглежда кодът на един изключително прост уебсайт за
+психолог."**
+
+Аз ще ви го генерирам и ще ви обясня всяка дума в него, за да видите, че не е магия, а логика! Готови ли сте да опитаме?
